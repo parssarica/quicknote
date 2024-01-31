@@ -104,8 +104,10 @@ When you view the note from view or all commands, you would see the new content.
 
 Quicknote wouldn't run if you didn't create a symbolic link. You can create it easily by:
 >chmod +x quicknote.py;sudo ln -s \`pwd\`/quicknote.py /usr/local/bin/quicknote<br>
->\[sudo] password for quicknote:
+>\[sudo] password for quicknote:<br>
 
-After you entered your password, it will start working!
+After you enter your password, run this command:
+
+>pip install -r requirements.txt<br>
 
 Pars SARICA
