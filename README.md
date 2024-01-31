@@ -103,7 +103,7 @@ When you view the note from view or all commands, you would see the new content.
 ### The command 'quicknote' not working
 
 Quicknote wouldn't run if you didn't create a symbolic link. You can create it easily by:
->sudo ln -s \`pwd\`/quicknote.py /usr/local/bin/quicknote
+>sudo ln -s \`pwd\`/quicknote.py /usr/local/bin/quicknote<br>
 >\[sudo] password for quicknote:
 
 After you entered your password, it will start working!
