@@ -91,12 +91,12 @@ If you forgot something to write while you were creating a note, you can edit by
 
 It will ask you:
 
->Enter the note's ID that you want to edit: 1
+>Enter the note's ID that you want to edit: 1<br>
 >example.com is an example site.<br>
->New content (Press enter to pass): example.com is an example site and a cat is a cat.
->Do you want to add more tags (Press any key else enter to decline):
->Tag 3: cat
->Tag 4:
+>New content (Press enter to pass): example.com is an example site and a cat is a cat.<br>
+>Do you want to add more tags (Press any key else enter to decline):<br>
+>Tag 3: cat<br>
+>Tag 4:<br>
 
 When you view the note from view or all commands, you would see the new content. You will also see this if you search the tag cat.
 
