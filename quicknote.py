@@ -3,6 +3,15 @@
 from peewee import *
 import sys
 import os
+import random
+import string
+import tempfile
+
+
+def get_random_string(length):
+    letters = string.ascii_lowercase
+    result_str = "".join(random.choice(letters) for i in range(length))
+    return result_str
 
 help = """Usage: quicknote [OPTIONS]
 
@@ -58,8 +67,8 @@ def new():
         tags.append(tag.replace(" ", "_"))
         i += 1
     tags = " ".join(tags)
-    Note.create(note_title=title, note=content, tags=tags)
 
+    Note.create(note_title=title, note=content, tags=tags)
 
 def search():
     tag = input("Write a tag: ").replace(" ", "_")
@@ -115,6 +124,7 @@ def view():
     except:
         print("Note not found.")
         return
+
     print(note.note_title)
     print()
     print(note.note)
@@ -141,8 +151,15 @@ def edit():
     except:
         print("Note not found.")
         return
-    print(note.note)
-    content = input("New content (Press enter to pass): ")
+
+    path = tempfile.mkstemp(prefix="quicknote-")
+    with open(path[1], "wt") as f:
+        f.write(note.note)
+    os.system(os.getenv("EDITOR") + " " + path[1])
+    with open(path[1], "rt") as f:
+        content = f.read()
+
+    os.remove(path[1])
     choice = input("Do you want to add more tags (Press any key else enter to decline)?")
     tags_new = []
     if choice == "":
