@@ -93,8 +93,14 @@ If you forgot something to write while you were creating a note, you can edit by
 It will ask you:
 
 >Enter the note's ID that you want to edit: 1<br>
->example.com is an example site.<br>
->New content (Press enter to pass): example.com is an example site and a cat is a cat.<br>
+
+It will open your default editor. You'll see the old content in it.
+
+>Nano<br>
+>example.com is an example site.
+
+You can edit it. Note: Your changes would be saved if you don't forget to save. After that, quicknote will ask you to add more tags:
+
 >Do you want to add more tags (Press any key else enter to decline):<br>
 >Tag 3: cat<br>
 >Tag 4:<br>
