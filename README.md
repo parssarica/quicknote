@@ -1,5 +1,5 @@
 # Quicknote
-Note: This program only works in UNIX based systems (Linux, MacOS and BSDs).
+Note: This program only works in UNIX based systems (Linux, MacOS and BSDs).<br><br>
 Quicknote is a note program. You tag notes, search with tags. It's a terminal program, you run this program from terminal. Here is how you can use it:
 
 ## Getting help in offline
